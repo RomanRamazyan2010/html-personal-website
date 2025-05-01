@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+   <style>
+        #intro{
+            width: 100%;
+            height: 700px;
+        }
+
+        #intro > img{
+            height: 100%;
+            width: 100%;
+        }
+
+        #intro > h1{
+            color: white;
+            position: absolute;
+            bottom: 60%;
+            left: 60%;
+            font-family: Cookie;
+            font-size: 100px;
+        }
+
+        #intro > h2{
+            color: white;
+            position: absolute;
+            bottom: 25%;
+            left: 60%;
+            font-family: Gluten;
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        @media (min-width: 1px) and (max-width: 800px){
+            #intro{
+                height: 500px;
+            }
+
+            #intro h1{
+                left: 20%;
+                font-size: 90px;
+            }
+
+            #intro h2{
+                left: 20%;
+            }
+        }
+
+        /**/
+
+        #skills{
+            background-color: #2e410a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #gridcontainer{
+            display: grid;
+            grid-template-rows: 150px 250px 250px;
+            grid-template-columns: 250px 250px;
+            gap: 50px;
+        }
+
+        #gridcontainer img{
+            width: 100%;
+            height: 100%;
+            border-radius: 45%;
+        }
+
+        #gridcontainer .one{
+            grid-column: span 2;
+        }
+
+        .griditem{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #gridcontainer .one{
+            align-items: flex-end;
+        }
+
+        /**/
+
+        #recentprojects{
+            background-color: #2e410a;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #gridcontainer2{
+            display: grid;
+            grid-template: 150px 350px / 350px 350px;
+            gap: 50px;
+        }
+
+        #gridcontainer2 img{
+            width: 100%;
+            height: 100%;
+            border-radius: 30%;
+            margin-bottom: 30px;
+        }
+
+        #gridcontainer2 .two1{
+            grid-column: span 2;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        #gridcontainer2 h1{
+            color: white;
+            font-family: Gluten;
+            font-weight: 400;
+        }
+
+        #gridcontainer2 p{
+            color: white;
+        }
+
+        /**/
+
+        #contactabout{
+            background-color: #2e410a;
+            color: white;
+            overflow: hidden;
+            padding: 200px 20% 0px 20%;
+        }
+
+        #contactabout h1{
+            font-family: Gluten;
+            font-weight: 400;
+        }
+
+        #contactabout li{
+            list-style-type: none;
+            padding-top: 20px;
+        }
+
+        .item{
+            width: 40%;
+        }
+
+        .about{
+            text-align: left;
+            float: left;
+        }
+
+        .contact{
+            text-align: right;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="intro">
+        <img src="./images/ball.png" alt="intro image of soccer ball"/>
+        <h1>I'm Roman</h1>
+        <h2>a web developer <br/>and soccer player</h2>
+    </div>
+
+    <div id="hero" style="background-color: #2e410a;">
+        <div class="px-4 py-5 my-0 text-center">
+            <img class="d-block mx-auto mb-4" src="./images/me.jpg" alt="" width="200" height="200" style="border-radius: 50%;">
+            <h1 class="display-5" style="font-family: Gluten; font-weight: 400; color: white;">Hello</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4" style="font-size: 25px; color: white;">My name is Roman, I am a web developer <br/>and soccer player in progress.</p>
+              <h1 style="color: white;">- - - - - - - - - - - - - -</h1>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div id="skills">
+        <div id="gridcontainer">
+            <div class="griditem one"><h1 style="color: white; font-family: Gluten; font-size: 40px; font-weight: 400;">My Skills</h1></div>
+            <div class="griditem two"><img src="./images/juggle.gif" alt="chicken juggling a soccer ball gif"/></div>
+            <div class="griditem three"><p style="color: white;">I am very good at juggling because I started playing at 7 years old. I can do any freestyle move you can think of.</p></div>
+            <div class="griditem four"><img src="./images/stonks.gif" alt="stonks meme gif"/></div>
+            <div class="griditem five"><p style="color: white;">Despite my age, (I'm 14 years old) I learned how to day trade. Of course I’m not a pro, but I know the basics.</p></div>
+        </div>
+    </div>
+
+    <div id="recentprojects">
+        <div id="gridcontainer2">
+            <div class="griditem2 two1"><h1>My Recent Projects</h1></div>
+            <div class="griditem2 two2"><p>RomanRamazyan2010.github.io/html-Guitar</p> <br/> <img src="./images/guitar.png" alt="guitar website picture"/> <br/> <p>I used only CSS positioning to “draw” a guitar.</p></div>
+            <div class="griditem2 two3"><p>Not Live : (</p> <br/> <img src="./images/mondrian.png" alt="guitar website picture"/> <br/> <p>I used CSS grid to make a beautiful Mondrian painting.</p></div>
+        </div>
+    </div>
+
+    <div id="contactabout">
+        <div class="item about">
+            <ul>
+                <li><h1>About Me</h1></li>
+                <li><p>I was born in California, but moved to Texas when I was about 11.</p></li>
+                <li><p>I mentioned that I can juggle with a soccer ball, but I can also juggle with smaller balls, like those circus clowns do.</p></li>
+                <li><p>I actually used to be pretty overweight but had a significant change this past year.</p></li>
+            </ul>
+        </div>
+
+        <div class="item contact">
+            <ul>
+                <li><h1>Contact Me</h1></li>
+                <li><p>If you like soccer and web development as much as I do.</p></li>
+                <li><p>Email: romanram10@yahoo.com <br/> Phone Number: 713-906-2896</p></li>
+                <li><p>Social Media: <br/> I don’t do social media. : )</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
